@@ -1,0 +1,89 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px 0;
+}
+.description-content {
+    padding: 16px;
+    background-color: rgba(22, 24, 35, 0.03);
+    border-radius: 12px;
+}
+.info-container {
+    display: flex;
+    align-items: center;
+}
+.image-user {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.name-container {
+    margin-left: 6px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-nickname {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.user-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.user-text {
+    font-size: 1.6rem;
+    margin: 20px 0;
+}
+.copy-link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: rgba(22, 24, 35, 0.03);
+    border-radius: 5px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+}
+.video-link {
+    height: 3rem;
+    width: 340px;
+    font-size: 1.4rem;
+    overflow: hidden;
+    opacity: 0.6;
+    text-overflow: ellipsis;
+    padding: 6px 0 6px 12px;
+}
+.copy {
+    background: none;
+    width: 34%;
+    cursor: pointer;
+    padding: 6px 12px 6px 0;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+.tab-menu-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.tab-item {
+    width: 100%;
+    color: rgba(22, 24, 35, 0.6);
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    cursor: pointer;
+}
+.active {
+    color: black;
+    border-bottom: 3px solid black;
+    font-weight: 600;
+}
+.border-div {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    margin-left: -32px;
+    margin-right: -32px;
+    margin-bottom: -1px;
+}

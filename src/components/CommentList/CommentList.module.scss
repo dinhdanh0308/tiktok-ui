@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    margin: 35px;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.content-container {
+    flex: 1;
+}
+.nick-name {
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+.comment {
+    font-size: 1.6rem;
+    color: #1d1f2a;
+}
+.action {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    &:hover {
+        color: var(--primary);
+    }
+}
+.reply {
+    flex: 0;
+    color: #8a8b90;
+    font-size: 1.2rem;
+    margin-left: 52px;
+}

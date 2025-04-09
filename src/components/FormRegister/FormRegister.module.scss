@@ -1,0 +1,55 @@
+.options {
+    display: flex;
+    flex-direction: column;
+    height: 368px;
+    overflow: overlay;
+    margin-top: 10px;
+}
+.items {
+    display: flex;
+    align-items: center;
+    margin: 0 70px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    margin-top: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(248, 248, 248);
+    }
+}
+.icon {
+    flex: 0;
+}
+.title {
+    text-align: center;
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+.active {
+    opacity: 0.5;
+    cursor: auto;
+    &:hover {
+        background-color: none;
+    }
+}
+.agreeme {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 30px;
+}
+.text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(22, 24, 35, 0.5);
+    line-height: 15px;
+    width: 337px;
+}
+.link {
+    font-weight: 600;
+    &:hover {
+        text-decoration: underline;
+    }
+}

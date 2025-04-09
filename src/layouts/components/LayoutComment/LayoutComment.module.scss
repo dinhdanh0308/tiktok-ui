@@ -1,0 +1,227 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    z-index: 999;
+}
+
+.video-user {
+    position: relative;
+    flex: 1;
+    &:hover .action-video {
+        display: flex;
+        animation: actionAnimation 1s linear;
+    }
+}
+@keyframes actionAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.video-content {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 20px;
+    color: var(--white);
+}
+
+.video-volume {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-video {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0;
+}
+.video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    cursor: pointer;
+}
+.close {
+    position: absolute;
+    color: #fff;
+    top: 20px;
+    left: 38px;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 6px 10px;
+    background-color: rgba(84, 84, 84, 0.5);
+    border-radius: 50%;
+    &:hover {
+        background-color: rgba(37, 37, 37, 0.6);
+        opacity: 0.7;
+    }
+}
+.icon-action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 62px;
+    height: 62px;
+    padding: 0 2px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.input-progress {
+    position: relative;
+    width: 85%;
+    margin-right: 10px;
+}
+.progress {
+    position: absolute;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    margin-left: 12px;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    &::-moz-range-thumb {
+        width: 12px;
+        height: 12px;
+        margin-left: 12px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 12px;
+        position: absolute;
+        top: 1px;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index: 1;
+    }
+    &:hover {
+        opacity: 1;
+    }
+    &:hover ~ .progress-bar {
+        opacity: 1;
+    }
+
+    &:hover::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 12px;
+        height: 12px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 12px;
+        opacity: 1;
+        top: 1px;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+.progress-bar {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    margin-left: 12px;
+    opacity: 0.8;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    transform: translateY(-50%);
+    transform-origin: left center; // để cho block này mặc định là sang bên phải và di chuyển ở giữa
+}
+
+.description {
+    font-size: 1.6rem;
+    margin: 10px 0 6px 0;
+    font-weight: 100;
+}
+
+.icon-volume {
+    width: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.background-volume {
+    position: relative;
+    right: -10px;
+    background-color: rgb(32, 30, 30, 0.3);
+    transform: rotate(270deg);
+    width: 320%;
+    border-radius: 20px;
+}
+.volume {
+    -webkit-appearance: none;
+    width: 120%;
+    height: 3px;
+    margin-bottom: 12px;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+
+    &::-moz-range-thumb {
+        width: 12px;
+        height: 12px;
+        margin-left: 12px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 12px;
+        position: absolute;
+        top: 1px;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index: 1;
+    }
+    &:hover {
+        opacity: 1;
+    }
+    &:hover ~ .progress-volume {
+        opacity: 1;
+    }
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 12px;
+        height: 12px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 12px;
+        opacity: 1;
+        top: 1px;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+.progress-volume {
+    position: absolute;
+    top: 53%;
+    opacity: 0.8;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    transform: translateY(-50%);
+    transform-origin: left center; // để cho block này mặc định là sang bên phải và di chuyển ở giữa
+    margin-left: 3px;
+}
+.content-container {
+    background-color: #fff;
+    flex: 0.5;
+}

@@ -1,0 +1,50 @@
+.wrapper {
+    width: 300px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 16px;
+    background-color: transparent;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-right: 12px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #ccc;
+    color: var(--white);
+    border-radius: 50%;
+}
+
+.yellow {
+    background-color: rgb(250, 206, 21);
+}
+.gray {
+    background-color: rgb(22, 24, 35);
+}
+.primary {
+    background-color: var(--primary);
+}
+.blue {
+    background-color: rgba(0, 0, 255, 0.856);
+}
+.title {
+    font-size: 1.6rem;
+}
+.more {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 8px 0;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}

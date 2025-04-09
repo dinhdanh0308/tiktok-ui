@@ -1,0 +1,80 @@
+.action-list {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.action-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    align-items: center;
+    margin: 8px 0 6px 0;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+.follow {
+    position: absolute;
+    top: 36px;
+    left: 16px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 4px;
+    color: var(--white);
+}
+.followed {
+    position: absolute;
+    top: 36px;
+    left: 14px;
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 4px;
+    color: var(--primary);
+}
+
+.icon {
+    font-size: 2.4rem;
+    padding: 14px 16px;
+    background-color: #f1f1f2;
+    border-radius: 50%;
+    color: var(--black);
+}
+.icon-active-red {
+    font-size: 2.4rem;
+    padding: 14px 16px;
+    background-color: #f1f1f2;
+    border-radius: 50%;
+    color: var(--primary);
+}
+.icon-active-yellow {
+    font-size: 2.4rem;
+    padding: 14px 16px;
+    background-color: #f1f1f2;
+    border-radius: 50%;
+    color: #face16;
+}
+
+.number {
+    padding-top: 5px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgba(22, 24, 35, 0.75);
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+}
